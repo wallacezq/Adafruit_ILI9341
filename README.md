@@ -6,7 +6,7 @@ This is a fork of Adafruit ILI9341 Library for Intel Galileo.
 **Limitation**: The screen is reacting rather slowly due to the poor I/O bandwidth provided by the I/O expander. 
 	    I/O performance can be improved significantly by cutting the board traces so that the D/C pin connect directly to one of the native GPIO coming out from Intel Quark SoC.
 	    
-Note: The Arduino.h file (**[arduinoidefolder]**\hardware\arduino\x86\cores\arduino) need to be replaced with the one included in the */Arduino* folder of this project.
+Note: The Arduino.h file (**[arduinoidefolder]**\hardware\arduino\x86\cores\arduino) need to be replaced with the one included in the *\Arduino* folder of this project. 
 
 ![text](http://i1266.photobucket.com/albums/jj531/wallace1zq/th_20140627_100348_zpsf47351c3.jpg)
 
