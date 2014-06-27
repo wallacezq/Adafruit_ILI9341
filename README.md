@@ -13,9 +13,9 @@ Note: The Arduino.h file (**[arduinoidefolder]**\hardware\arduino\x86\cores\ardu
 ---
 *~This is the original readme from Adafruit ILI9341 project~*
 
+```
 This is a library for the Adafruit ILI9341 display products
 
-```
 This library works with the Adafruit 2.8" Touch Shield V2 (SPI)
   ----> http://www.adafruit.com/products/1651
  
