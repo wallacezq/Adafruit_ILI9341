@@ -23,8 +23,9 @@
  #include "WProgram.h"
 #endif
 #include <Adafruit_GFX.h>
+#if !defined (__X86__)
 #include <avr/pgmspace.h>
-
+#endif
 
 #define ILI9341_TFTWIDTH  240
 #define ILI9341_TFTHEIGHT 320
@@ -121,6 +122,8 @@ class Adafruit_ILI9341 : public Adafruit_GFX {
   /* These are not for current use, 8-bit protocol only! */
   uint8_t  readdata(void),
     readcommand8(uint8_t reg, uint8_t index = 0);
+
+  uint16_t readdid(void);
   /*
   uint16_t readcommand16(uint8_t);
   uint32_t readcommand32(uint8_t);
@@ -148,6 +151,8 @@ class Adafruit_ILI9341 : public Adafruit_GFX {
     volatile RwReg *mosiport, *clkport, *dcport, *rsport, *csport;
     uint32_t  _cs, _dc, _rst, _mosi, _miso, _sclk;
     uint32_t  mosipinmask, clkpinmask, cspinmask, dcpinmask;
+#elif defined (__X86__)
+  uint32_t  _cs, _dc, _rst, _mosi, _miso, _sclk;
 #endif
 };
 
